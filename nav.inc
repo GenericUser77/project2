@@ -1,7 +1,7 @@
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">
-        <img src="/styles/images/WellTech_Logo.PNG" alt="WellTech Logo">
+        <img src="styles/images/WellTech_Logo.PNG" alt="WellTech Logo">
     <span>WellTech</span>
     </div>
         <ul class="nav-links">
