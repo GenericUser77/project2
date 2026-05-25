@@ -11,6 +11,7 @@
 <body>
 <?php require_once("settings.php");
 $query = "SELECT * FROM jobs";
+$conn = mysqli_connect($host, $user, $pwd, $sql_db);
 $result = mysqli_query($conn, $query); ?>
 
 <h1>Job Listings</h1>
