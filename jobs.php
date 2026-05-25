@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<?php require_once("settings.php"); ?>
-<?php include 'nav.inc'; ?>
+<?php require_once("settings.php");
+$query = "SELECT * FROM jobs";
+$result = mysqli_query($conn, $query); ?>
 
-<p> hello world </p>
+<h1>Job Listings</h1>
 
 
-
-<?php include 'footer.inc'; ?>
+<?php
+include 'nav.inc';
+include 'footer.inc'; ?>
 </body>
 </html>
