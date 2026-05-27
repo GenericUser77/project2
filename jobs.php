@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
 <section class="job-card">
 
     <h2><?php echo $row['title']; ?></h2>
-
+    <h3><?php echo $row['job_code']; ?></h3>
     <p><?php echo $row['description']; ?></p>
 
     <p>Key skills include:</p>
@@ -35,7 +35,7 @@ if (mysqli_num_rows($result) > 0) {
     </ul>
 
     <p>
-        <?php echo $row['job_code']; ?> - 
+        
         Salary: $<?php echo number_format($row['salary_min']); ?> - 
         $<?php echo number_format($row['salary_max']); ?> per year
     </p>
