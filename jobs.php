@@ -39,7 +39,7 @@ if (mysqli_num_rows($result) > 0) {
         Salary: $<?php echo number_format($row['salary_min']); ?> - 
         $<?php echo number_format($row['salary_max']); ?> per year
     </p>
-
+<br><br>
 </section>
 <?php
     }
