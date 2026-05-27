@@ -14,7 +14,7 @@ $query = "SELECT * FROM jobs";
 $result = mysqli_query($conn, $query); ?>
 
 <h1>Jobs Descriptions</h1>
-<div class="jobs-container">
+<div class="jobs-container" > 
 <?php
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
