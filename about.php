@@ -84,7 +84,7 @@ echo '<!-- Group Photo -->';
 echo '<section>';
 echo '<h2>Group Photo</h2>';
 echo '<figure>';
-echo '<img src="styles/images/group_photo.png" alt="Group Photo" width="300">';
+echo '<img src="images/group_photo.png" alt="Group Photo" width="300">';
 echo '<figcaption>"We are the best developers in town"</figcaption>';
 echo '</figure>';
 echo '</section>';
