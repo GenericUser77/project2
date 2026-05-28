@@ -22,7 +22,7 @@ include 'header.inc';
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
 
-        $skills = explode(",", $row['skills']); /* I asked claude how to split the skills into an array, this was the result of my question. */
+        $skills = explode(",", $row['skills']); /* I asked claude how to split the skills into a list, this was the result of my question. */
 ?>
         <section class="job-card">
 <?php
