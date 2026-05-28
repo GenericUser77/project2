@@ -8,7 +8,7 @@ echo '<meta name="keywords" content="HTML5, CSS layout">';
 echo '<meta name="author" content="Robin Ellul Romero">';
 echo '<title>Job Application for WellTech</title>';
 echo '<link rel="stylesheet" href="styles/styles.css">';
-echo '<link rel="icon" type="image/icon" href="styles/images/WellTech_Logo.PNG">';
+echo '<link rel="icon" type="image/icon" href="images/WellTech_Logo.PNG">';
 echo '<style>';
 echo '.page-container {';
 echo 'max-width: 1200px;';

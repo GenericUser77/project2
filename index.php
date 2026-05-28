@@ -9,7 +9,7 @@ echo '<meta name="keywords" content="HTML, CSS, PHP">';
 echo '<meta name="author" content="Group 01 - Panha, Robin, Elijah, Ayden">';
 echo '<title>Digital Health & Wellness Provider: WellTech</title>';
 echo '<link rel="stylesheet" href="styles/styles.css">';
-echo '<link rel="icon" type="image/icon" href="styles/images/WellTech_Logo.PNG">';
+echo '<link rel="icon" type="image/icon" href="images/WellTech_Logo.PNG">';
 echo '';
 echo '';
 echo '</head>';
