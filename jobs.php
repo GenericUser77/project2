@@ -1,137 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Robin Ellul Romero">
+    <meta description="A page to show and describe the jobs of the company.">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<?php require_once("settings.php");
+$query = "SELECT * FROM jobs";
+$result = mysqli_query($conn, $query); ?>
+
+<h1>Jobs Descriptions</h1>
+<div class="jobs-container" > 
 <?php
-echo '<!DOCTYPE html>';
-echo '<html lang="en">';
-echo '<head>';
-echo '<!-- Bog standard meta tags -->';
-echo '<meta charset="UTF-8">';
-echo '<meta name="description" content="Job description page for webtech project assignment about Welltech.">';
-echo '<meta name="keywords" content="HTML, CSS">';
-echo '<meta name="author" content="Elijah">';
-echo '';
-echo '<!-- Title of page in browser tab -->';
-echo '<title>Job Description - Welltech  </title>';
-echo '<!-- Link to external CSS file for styling -->';
-echo '<link rel="stylesheet" href="styles/styles.css">';
-echo '<link rel="icon" type="image/icon" href="styles/images/WellTech_Logo.PNG">';
-echo '';
-echo '</head>';
-echo '';
-echo '<body>';
-echo '<!-- Page heading  -->';
-echo '<h1 class="H1exp">WellTech Job Descriptions</h1>';
-echo '<!-- different sections for each job position -->';
-echo '<!-- Descriptions are autofilled because we arent getting tested on our ability to fake a company. We are getting tested on our ability to code a webpage. -->';
-echo '<section class="section">';
-echo '<h2>About Jobs at WellTech</h2>';
-echo '<p>';
-echo 'WellTech has multiple different job positions with varying requirements and responsibilities. Each job listed will also have its salary shown, and a reference number. The current positions we are looking for are:';
-echo '</p>';
-echo '<ol>';
-echo '<li>Software Developer, SD005</li>';
-echo '<li>IT Support Specialist, IS024</li>';
-echo '<li>Network Engineer, NE559</li>';
-echo '<li>Cybersecurity Analyst, CA901</li>';
-echo '<li>Web Designer, WD101</li>';
-echo '</ol>';
-echo '';
-echo '</section>';
-echo '<!-- Software Developer job section -->';
-echo '<section class="section">';
-echo '<h2>Software Developer</h2>';
-echo '<p>';
-echo 'We are looking for a passionate Software Developer to join our team. The ideal candidate will have experience in web development and a strong understanding of modern programming practices.';
-echo 'Responsibilities include developing and maintaining our digital health platforms, collaborating with cross-functional teams, and ensuring the security and reliability of our applications. <br>';
-echo 'Key skills include:';
-echo '</p>';
-echo '<ul>';
-echo '<li>Proficiency in JavaScript, HTML, and CSS</li>';
-echo '<li>Experience with frameworks such as React or Angular</li>';
-echo '<li>Background in healthcare technology</li>';
-echo '</ul>';
-echo 'SD005 - Salary: $80,000 - $100,000 per year';
-echo '';
-echo '</section>';
-echo '<!-- IT Support Specialist job section -->';
-echo '<section class="section">';
-echo '<h2>IT Support Specialist</h2>';
-echo '<p>';
-echo 'We are seeking an IT Support Specialist to provide technical assistance and support to our employees. The ideal candidate will have experience in troubleshooting hardware and software issues, managing user accounts, and maintaining a secure network environment.';
-echo 'Responsibilities include responding to user inquiries, performing routine maintenance tasks, and documenting technical issues and resolutions. <br>';
-echo 'Key skills include:';
-echo '</p>';
-echo '';
-echo '<ul>';
-echo '<li>Strong problem-solving abilities</li>';
-echo '<li>Excellent communication skills</li>';
-echo '<li>Solid understanding of IT systems and protocols</li>';
-echo '</ul>';
-echo 'IS024 - Salary: $50,000 - $70,000 per year';
-echo '';
-echo '</section>';
-echo '<!-- Network Engineer job section  -->';
-echo '<section class="section">';
-echo '<h2>Network Engineer</h2>';
-echo '<p>';
-echo 'We are looking for a skilled Network Engineer to design, implement, and maintain our network infrastructure. The ideal candidate will have experience with network protocols, security measures, and troubleshooting techniques.';
-echo 'Responsibilities include monitoring network performance, identifying and resolving issues, and ensuring the availability and security of our network systems. <br>';
-echo 'Key skills include:';
-echo '</p>';
-echo '<ul>';
-echo '<li>Knowledge of TCP/IP protocols</li>';
-echo '<li>Experience with routing and switching technologies</li>';
-echo '<li>Familiarity with network monitoring tools</li>';
-echo '</ul>';
-echo 'NE559 - Salary: $70,000 - $90,000 per year';
-echo '';
-echo '</section>';
-echo '<!-- Cybersecurity Analyst job section -->';
-echo '<section class="section">';
-echo '<h2>Cybersecurity Analyst</h2>';
-echo '<p>';
-echo 'We are seeking a Cybersecurity Analyst to protect our digital assets and ensure the integrity of our systems. The ideal candidate will have experience in identifying and mitigating security threats, conducting vulnerability assessments, and implementing security measures.';
-echo 'Responsibilities include monitoring security alerts, investigating incidents, and developing strategies to enhance our overall security posture. <br>';
-echo 'Key skills include:';
-echo '</p>';
-echo '<ul>';
-echo '<li>Knowledge of cybersecurity principles</li>';
-echo '<li>Experience with security tools and technologies</li>';
-echo '<li>Ability to stay current with emerging threats</li>';
-echo '</ul>';
-echo 'CA901 - Salary: $90,000 - $110,000 per year';
-echo '';
-echo '</section>';
-echo '<!-- Web Designer job section -->';
-echo '<section class="section">';
-echo '<h2>Web Designer</h2>';
-echo '<p>';
-echo 'We are looking for a creative Web Designer to create engaging and user-friendly interfaces for our digital products. The ideal candidate will have a strong portfolio of design work and experience with modern design tools.';
-echo 'Responsibilities include collaborating with developers to implement designs, creating wireframes and mockups, and ensuring a consistent brand experience across all platforms. <br>';
-echo 'Key skills include:';
-echo '</p>';
-echo '<ul>';
-echo '<li>Proficiency in design software such as Adobe Creative Suite</li>';
-echo '<li>Understanding of user experience (UX) principles</li>';
-echo '<li>Ability to create responsive designs</li>';
-echo '</ul>';
-echo 'WD101 - Salary: $60,000 - $80,000 per year';
-echo '';
-echo '</section>';
-echo '';
-echo '<!-- aside section with extra information -->';
-echo '<aside class="aside">';
-echo '<h3>Job Application Tips</h3>';
-echo '<p>Here are some tips to help you succeed in your job application:</p>';
-echo '<ul>';
-echo '<li>Customize your resume for each position</li>';
-echo '<li>Prepare thoughtful answers to common interview questions</li>';
-echo '<li>Follow up with a thank-you email after your interview</li>';
-echo '</ul>';
-echo '</aside>';
-echo '';
-include 'nav.inc';
-echo '';
-include 'footer.inc';
-echo '';
-echo '</body>';
-echo '</html>';
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+
+        $skills = explode(",", $row['skills']); /* I asked claude how to split the skills into an array, this was the result of my question. */
 ?>
+<section class="job-card">
+
+    <h2><?php echo $row['title']; ?></h2>
+    <h3><?php echo $row['job_code']; ?></h3>
+    <p><?php echo $row['description']; ?></p>
+
+    <p>Key skills include:</p>
+    <ul>
+        <?php foreach ($skills as $skill): ?>
+            <li><?php echo trim($skill); ?></li>
+        <?php endforeach; ?>
+    </ul>
+
+    <p>
+        
+        Salary: $<?php echo number_format($row['salary_min']); ?> - 
+        $<?php echo number_format($row['salary_max']); ?> per year
+    </p>
+<br><br>
+</section>
+<?php
+    }
+} else {
+    echo "<p>No jobs found.</p>";
+}
+
+mysqli_close($conn);
+?>
+</div>
+
+<?php
+include 'nav.inc';
+include 'footer.inc'; ?>
+</body>
+</html>
