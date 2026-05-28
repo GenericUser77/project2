@@ -16,7 +16,7 @@ echo '<title>Group Info</title>';
 echo '';
 echo '<!-- Link to CSS -->';
 echo '<link rel="stylesheet" href="styles/styles.css">';
-echo '<link rel="icon" type="image/icon" href="styles/images/WellTech_Logo.PNG">';
+echo '<link rel="icon" type="image/icon" href="images/WellTech_Logo.PNG">';
 echo '';
 echo '</head>';
 echo '';
