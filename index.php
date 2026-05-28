@@ -24,7 +24,7 @@ echo '<input type="search" id="site-search" name="q" placeholder="Search...">';
 echo '<button type="submit">Search</button>';
 echo '</form>';
 echo '</div>';
-echo '<h1 class="H1exp">Welcome to WellTech</h1>';
+include 'header.inc';
 echo '</section>';
 echo '<section class="section">';
 echo '<h2>About Us</h2>';
